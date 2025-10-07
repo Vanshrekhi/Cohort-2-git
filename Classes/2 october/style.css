@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* 
+#Outer{
+    position: relative; 
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+
+#Inner {
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+}
+#Micro {
+    
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+#Actual{
+    position: absolute;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(225, 215, 225);
+}
+/* 
+#car2 {
+        height: 30%;
+        width: 60%;
+        background-color: rgb(55, 31, 240);
+}
+
+#car3 {
+    height: 45%;
+        width: 70%;
+    background-color: rgb(161, 255, 19);
+} */ 
+
+
+
+/* #homepage{
+    height: 3000px;
+    width:100%;
+    background-color: black;
+}
+
+
+#side{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    height: 600px;
+    width: 100px;
+    background-color: rgb(228, 11, 11);
+} */
+
+#box1{
+    
+        height: 3000px;
+            width: 100%;
+            background-color: rgb(125, 113, 113);
+}
+
+
+#box2{
+    
+    height: 1000px;
+        width: 100%;
+        background-color: rgb(12, 10, 10);
+}
+
+#box3 {
+    position: relative;
+    height: 500px;
+    width:100%;
+    background-color: rgb(37, 26, 26);
+}
+
+#box4 {
+    top: 0;
+    position: sticky;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(208, 52, 52);
+}

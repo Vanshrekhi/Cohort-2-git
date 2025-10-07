@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#pic {
+    height: 100vh;
+    /* viewport ka 100% height */
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1610374634235-b51ef357f905?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+}
+
+#btn {
+    background-image: linear-gradient(to right,
+                rgba(255, 0, 0, 0.7),
+                /* soft red */
+                rgba(0, 0, 255, 0.7),
+                /* soft blue */
+                rgba(255, 255, 255, 0.6)
+                /* soft white */
+            );
+    height: 240px;
+    width: 770px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+#btn1 {
+    height: 40px;
+    width: 120px;
+    background-image: linear-gradient(to right,
+                rgba(255, 0, 0, 0.7),
+                /* soft red */
+                rgba(0, 0, 255, 0.7),
+                /* soft blue */
+                rgba(255, 255, 255, 0.6)
+                /* soft white */
+            );
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    /* pseudo elements ke liye */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    /* button shadow */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+/* hover effect */
+#btn1:hover {
+    background: linear-gradient(to right, #ff4d4d, #1a0000);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+}

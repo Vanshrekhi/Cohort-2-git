@@ -1,0 +1,140 @@
+@font-face {
+    font-family: horror;
+    src: url(..//Fontss/Another\ Danger\ -\ Demo.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+#name {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e3a8a;
+    /* Dark Navy */
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#wb {
+    font-style: italic;
+}
+
+/* About Me */
+#about-me {
+    height: 150px;
+    width: 80%;
+    background-color: #f97316;
+    /* Soft Orange */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.about-content {
+    text-align: center;
+    gap: 20px;
+}
+
+/* Education */
+.Edn {
+    background-color: #38bdf8;
+    /* Sky Blue */
+    height: 220px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#Ednn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+#rec1,
+#rec2 {
+    height: 60px;
+    width: 600px;
+    background-color: #0ea5e9;
+    /* Bright Blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+/* Projects */
+.Projects {
+    background-color: #22c55e;
+    /* Fresh Green */
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#proj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+#rec11,
+#rec12,
+#rec13 {
+    height: 60px;
+    width: 600px;
+    background-color: #16a34a;
+    /* Darker Green */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   border-radius: 6px; 
+    margin: 5px 0;
+}
+
+/* Footer */
+#foot {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    /* Dark Gray / Black */
+    color: white;
+}

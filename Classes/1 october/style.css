@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/736x/8b/9e/3a/8b9e3a21df5aea88b7c29c64083efaaf.jpg");
+    background-size: cover;
+    font-family: 'Creepster', cursive;
+    font-size: 40px;
+    color: red;
+    padding: 100px;
+    text-shadow: 0 0 10px red, 0 0 20px darkred;
+    animation: backgroundFlicker 8s infinite;
+}
+
+#btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    animation: flicker 2s infinite alternate;
+    
+}
+
+#btn {
+    font-family: "Creepster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 160px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    text-shadow: 0 0 5px red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: glow 1.5s infinite alternate;
+}
+
+#btn:hover {
+    background-color: red;
+    color: black;
+    text-shadow: none;
+    box-shadow: 0 0 20px red;
+    transform: scale(1.1);
+}
+
+#xyz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Horror Effects */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0.6;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    60% {
+        opacity: 0.7;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px red;
+    }
+
+    100% {
+        text-shadow: 0 0 20px red, 0 0 30px darkred;
+    }
+}
+
+@keyframes backgroundFlicker {
+
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(0.8) contrast(1.2);
+    }
+}
