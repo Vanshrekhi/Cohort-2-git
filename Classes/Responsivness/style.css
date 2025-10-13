@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #111;
+}
+
+/* h1{
+    font-size: 400px;
+    /* color: transparent;
+    background-image: url(https://media.giphy.com/media/ttjYjnMeJraSc/giphy.gif);
+    background-size: cover;
+    background-clip: text;
+    text-align: center;
+    margin-top: 20%; */
+    /* color: transparent;
+    text-align: center;
+    -webkit-text-stroke: 30px red
+} */
+
+#parent{
+    height: 400px;
+    width:100%;
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+#parent::-webkit-scrollbar{
+    
+    height: 20px;
+    background-color: red;
+}
+
+#parent::-webkit-scrollbar-thumb{
+    
+    background-color: lightblue;
+}
+
+.child{
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

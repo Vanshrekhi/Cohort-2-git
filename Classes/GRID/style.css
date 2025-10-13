@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#parent {
+
+    
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-color: white;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.box{
+    background-color: blue;
+    border: 5px solid white;
+}
+.box:nth-child(1){
+    background-color: red;
+}
+.box:nth-child(2) {
+    background-color: green;
+}
+.box:nth-child(3) {
+    background-color: yellow;
+}
+.box:nth-child(4) {
+    background-color: purple;
+}

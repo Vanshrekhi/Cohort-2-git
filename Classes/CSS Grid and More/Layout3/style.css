@@ -1,0 +1,58 @@
+*{
+    
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: black;
+}
+
+main{
+        height: 100%;
+            width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
+    grid-template-rows: 100px auto 100px 200px;
+    grid-template-areas: "header header header"
+                            "section section section"
+                            "div-left bot-up div-right"
+                            "div-left bot-down div-right"
+
+}
+
+
+header{
+    background-color: white;
+    grid-area: header;
+}
+section{
+    background-color: lightgrey;
+    grid-area: section;
+
+}
+#div-left{
+    background-color: grey;
+    grid-area: div-left;
+}
+#div-right{
+    background-color: rgb(165, 137, 137);
+    grid-area: div-right;
+}
+#bot-up{
+    background-color: darkgrey;
+    grid-area: bot-up;
+}
+#bot-down{
+    background-color: rgb(133, 89, 89);
+    grid-area: bot-down;
+}
