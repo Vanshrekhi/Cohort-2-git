@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 5px solid transparent;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-color: red;
+  gap: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+main section:hover {
+  flex-grow: 1.5;
+}
+main section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/736x/29/c5/a0/29c5a01a927d76e71dc4067a007ea891.jpg");
+}
+main section:nth-child(2) {
+  background-image: url("https://i.pinimg.com/736x/15/41/0c/15410cfa5dd0ac8e68167f2d5770ee5e.jpg");
+}
+main section:nth-child(3) {
+  background-image: url("https://i.pinimg.com/736x/bc/5d/d1/bc5dd12d4d4338cc1e73874a054c4542.jpg");
+}
+main section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/736x/6a/1d/a6/6a1da6fc897e4e38d660ce0f41b057de.jpg");
+}
+main section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/736x/1b/8b/dd/1b8bdd47109ec4a0871469abbb2435b0.jpg");
+}/*# sourceMappingURL=style.css.map */

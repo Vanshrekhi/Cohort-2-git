@@ -1,0 +1,14 @@
+
+Absolute units -- fixed values, screen ka size change kro to bhi vo change nhi higa eg px, 
+Responsive units -- depend krti hai kisi cheez pr
+            %, vw, vh, rem, em, vmin, vmax, 
+
+
+    vw --> viewport's(Browser jo area hume deta hai jaha hum webiste ka content daal ske) width
+
+    vh --> viewport's height
+
+
+
+    1vw = 5px
+    50vw = 250px    

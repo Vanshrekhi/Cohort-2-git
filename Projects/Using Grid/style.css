@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+
+}
+
+main {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    border: 2px solid white;
+    /* <-- This is the missing line */
+    grid-template-columns: 400px 25% 25% 400px;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "header section section section"
+        "header div1 div2 div3";
+}
+
+
+header {
+    background-image: url('https://i.pinimg.com/736x/82/0d/33/820d3366c18a961d48f9422f7169e46c.jpg');
+    object-fit: cover;
+    background-color: red;
+    grid-area: header;
+}
+
+section {
+    background-color: blue;
+    grid-area: section;
+    background-image: url('https://i.pinimg.com/736x/0f/d9/64/0fd9641b32d77afda231eca77488bdb0.jpg');
+    object-fit: cover;
+    
+}
+
+
+#div1 {
+    background-color: green;
+    grid-area: div1;
+        background-image: url('https://i.pinimg.com/736x/0f/d9/64/0fd9641b32d77afda231eca77488bdb0.jpg');
+            object-fit: cover;
+}
+
+#div2 {
+    background-color: rgb(72, 191, 72);
+    grid-area: div2;
+        background-image: url('https://i.pinimg.com/736x/0f/d9/64/0fd9641b32d77afda231eca77488bdb0.jpg');
+            object-fit: cover;  
+}
+
+
+#div3 {
+    background-color: rgb(171, 239, 171);
+    grid-area: div3;
+        background-image: url('https://i.pinimg.com/736x/0f/d9/64/0fd9641b32d77afda231eca77488bdb0.jpg');
+            object-fit: cover;
+}
+/* #parent {
+
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.box {
+    background-color: blue;
+    border: 5px solid white;
+}
+
+.box:nth-child(1) {
+    background-color: red;
+}
+
+.box:nth-child(2) {
+    background-color: green;
+}
+
+.box:nth-child(3) {
+    background-color: yellow;
+}
+
+.box:nth-child(4) {
+    background-color: purple;
+} */
