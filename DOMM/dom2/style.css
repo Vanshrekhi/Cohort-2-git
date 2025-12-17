@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: black;
+    font-size: 40px;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+button{
+        padding: 20px;
+        font-weight: 600;
+        font-size: 100px;
+        border-radius: 15px;
+        border-color: 2px solid blue;
+        background-color: crimson;
+        position: relative;
+        z-index: 9;
+}
+button:hover{
+    cursor: pointer;
+    background-color: blue;
+}

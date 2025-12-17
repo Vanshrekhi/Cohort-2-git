@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    transition: all 0.3s linear;
+}
+
+
+.red {
+    background-color: red;
+
+}
+
+.blue {
+    background-color: rgb(88, 17, 210);
+}
+
+.green {
+    background-color: rgb(7, 240, 23);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    anchor-name: --some-anchor;
+    gap: 40px;
+   
+}
+
+.box:hover{
+   transform: scale(1.2) !important; 
+}
+body:has(.box:hover) .box{
+    transform: scale(0.8);
+}

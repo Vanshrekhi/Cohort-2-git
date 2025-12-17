@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(53, 52, 52), black);
+    padding: 20px;
+}
+
+section {
+    height: 100%;
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    /* overflow: hidden;  */
+}
+
+.all-reels {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+.reel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* Important for bottom overlay */
+    overflow: hidden;
+    background-color: lightseagreen;
+    scroll-snap-align: start;
+    scroll-snap-align: always;
+}
+
+.reel video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* FIXED BOTTOM */
+.reel .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding:30px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.103));
+    color: white;
+    border-top: 30px;
+    
+}
+
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.bottom .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom .user button {
+    font-weight: 500;
+    padding: 2px 4px;
+    font-size: 13px;
+    border-radius: 2px;
+    background-color: transparent ;
+    border: 1px solid white;
+    color: white;
+}
+
+.reel h6{
+    margin-top: 10px;
+}
+
+.right{
+    width: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    bottom: 13% ;
+    position: absolute;
+    /* transform: translate(100%); */
+    right: 5%;
+}

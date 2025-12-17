@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: rgb(255, 255, 255);
+ 
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
+.box:hover{
+    anchor-name: --some-anchor;
+    background-color: rgb(232, 232, 224);
+
+}
+
+.red {
+    background-color: red;
+   
+}
+.blue {
+    background-color: rgb(88, 17, 210);
+}
+.green {
+    background-color: rgb(7, 240, 23);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+anchor-name: --some-anchor;
+}
+main a{
+    text-decoration: none;
+}
+.anchor{
+    background-color: rgba(232, 232, 224, 0.29);
+    border-radius: 10px;
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    /* height: 50px;
+    width: 60px; */
+    position-anchor: --some-anchor;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;
+}

@@ -1,0 +1,25 @@
+package PracticeProblems;
+
+public class Continuestatement {
+    public static void main(String[] args) {
+        // 2, 3, 6, 8, 9 
+
+
+//            if(i == 14 || i == 27) continue;
+//                if (i % 2 == 0 || i % 3 == 0) {
+//                    System.out.println(i);
+//
+//            }
+
+//            if(i == 14 || i == 27) continue;
+
+        for (int i = 1; i <= 100 ; i++) {
+
+            System.out.println("HELLO ");
+            if (i % 2 == 1) continue;
+            System.out.println(i);
+
+          }
+    }
+}
+
